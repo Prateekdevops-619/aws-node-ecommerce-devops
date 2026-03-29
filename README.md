@@ -44,11 +44,11 @@ To keep the project modular, the following files are created inside the `infrast
 
 ---
 
-## 🚀 Step-by-Step Deployment Guide
+##  Step-by-Step Deployment Guide
 
 Follow these steps to deploy the 5-service e-commerce application from scratch.
 
-### Step 1: Containerize the Services
+### Containerize the Services and then use teeraform to provision the infrastructure and deploy the app
 Navigate into each service folder, build the image, and push it to Docker Hub:
 ```bash
 # Repeat for: frontend, user-service, product-service, order-service, cart-service
@@ -66,6 +66,6 @@ terraform apply -auto-approve
 
 
 
-docker build -t prateek61913/frontend:latest ./frontend
+
 docker push prateek61913/frontend:latest
 # (Repeat for all 5 services)
